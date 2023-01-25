@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Verify contact us page",
+        "description": "",
+        "id": "this-is-contact-us-feature;verify-contact-us-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1095379100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Lunching application \u003c\"URl\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URl",
+                  "offset": 23
+                }
+              ],
+              "location": "StepdeffClass.lunching_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14371092500,
+              "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00274.5.3\u0027, revision: \u00274b786a1e430\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [be04609869b6ae1bc968904cf0e8e231, findElement {using\u003dxpath, value\u003d//a[text()\u003d\u0027Contact us\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Matt\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54370/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: be04609869b6ae1bc968904cf0e8e231\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy28.click(Unknown Source)\r\n\tat com.Actions.qa.HomePageAction.clickContactUs(HomePageAction.java:16)\r\n\tat com.StepDeff.qa.StepdeffClass.click_contact_us_link(StepdeffClass.java:39)\r\n\tat ✽.Then click contact us link(TheBest.feature:7)\r\nCaused by: java.io.UncheckedIOException: java.io.IOException: An existing connection was forcibly closed by the remote host\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy28.click(Unknown Source)\r\n\tat com.Actions.qa.HomePageAction.clickContactUs(HomePageAction.java:16)\r\n\tat com.StepDeff.qa.StepdeffClass.click_contact_us_link(StepdeffClass.java:39)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\r\nCaused by: java.io.IOException: An existing connection was forcibly closed by the remote host\r\n\tat java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)\r\n\tat java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)\r\n\tat java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)\r\n\tat java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)\r\n\tat java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "click contact us link",
+            "match": {
+              "location": "StepdeffClass.click_contact_us_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Verify Contact page display",
+            "match": {
+              "location": "StepdeffClass.verify_Contact_page_display()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Verify Contact page display",
+        "description": "",
+        "id": "this-is-contact-us-feature;verify-contact-page-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4094373700,
+              "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00274.5.3\u0027, revision: \u00274b786a1e430\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [be04609869b6ae1bc968904cf0e8e231, get {url\u003dhttp://automationpractice.com/index.php}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Matt\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54370/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: be04609869b6ae1bc968904cf0e8e231\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)\r\n\tat com.Utility.qa.Baseclass.launchingURL(Baseclass.java:66)\r\n\tat com.StepDeff.qa.StepdeffClass.lunching_application(StepdeffClass.java:32)\r\n\tat ✽.Given Lunching application \u003c\"URL\"\u003e(TheBest.feature:14)\r\nCaused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)\r\n\tat com.Utility.qa.Baseclass.launchingURL(Baseclass.java:66)\r\n\tat com.StepDeff.qa.StepdeffClass.lunching_application(StepdeffClass.java:32)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\r\nCaused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\n\tat org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)\r\n\tat org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)\r\n\tat org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)\r\n\tat org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)\r\n\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)\r\n\tat io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)\r\n\tat io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\nCaused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\nCaused by: java.net.ConnectException: Connection refused: no further information\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "Lunching application \u003c\"URL\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 23
+                }
+              ],
+              "location": "StepdeffClass.lunching_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "enter woman in search field",
+            "match": {
+              "location": "StepdeffClass.enter_woman_in_search_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "click search button",
+            "match": {
+              "location": "StepdeffClass.click_search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Verify search result display",
+            "match": {
+              "location": "StepdeffClass.verify_search_result_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "click Printed Chiffon Dress link",
+            "match": {
+              "location": "StepdeffClass.click_Printed_Chiffon_Dress_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "click Add to Cart",
+            "match": {
+              "location": "StepdeffClass.click_Add_to_Cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "click home icon to go back to home page",
+            "match": {
+              "location": "StepdeffClass.click_home_icon_to_go_back_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "verify  Homepage is display",
+            "match": {
+              "location": "StepdeffClass.verify_Homepage_is_display()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 25,
+            "value": "#@test"
+          }
+        ],
+        "line": 26,
+        "name": "verify  Homepage is display",
+        "description": "",
+        "id": "this-is-contact-us-feature;verify--homepage-is-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4109428200,
+              "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00274.5.3\u0027, revision: \u00274b786a1e430\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [be04609869b6ae1bc968904cf0e8e231, get {url\u003dhttp://automationpractice.com/index.php}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Matt\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54370}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54370/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: be04609869b6ae1bc968904cf0e8e231\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)\r\n\tat com.Utility.qa.Baseclass.launchingURL(Baseclass.java:66)\r\n\tat com.StepDeff.qa.StepdeffClass.lunching_application(StepdeffClass.java:32)\r\n\tat ✽.Given Lunching application \u003c\"URL\"\u003e(TheBest.feature:27)\r\nCaused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)\r\n\tat com.Utility.qa.Baseclass.launchingURL(Baseclass.java:66)\r\n\tat com.StepDeff.qa.StepdeffClass.lunching_application(StepdeffClass.java:32)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:806)\r\n\tat org.testng.TestRunner.run(TestRunner.java:601)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:433)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:330)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1176)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1099)\r\n\tat org.testng.TestNG.run(TestNG.java:1067)\r\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)\r\nCaused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\n\tat org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)\r\n\tat org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)\r\n\tat org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)\r\n\tat org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)\r\n\tat io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)\r\n\tat io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)\r\n\tat io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)\r\n\tat io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\nCaused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:41725\r\nCaused by: java.net.ConnectException: Connection refused: no further information\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)\r\n\tat io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\n",
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Lunching application \u003c\"URL\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 23
+                }
+              ],
+              "location": "StepdeffClass.lunching_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "click singin",
+            "match": {
+              "location": "StepdeffClass.click_singin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "enter username and password and click signin",
+            "match": {
+              "location": "StepdeffClass.enter_username_and_password_and_click_signin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "verify user can login",
+            "match": {
+              "location": "StepdeffClass.verify_user_can_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is contact us feature",
+    "description": "",
+    "id": "this-is-contact-us-feature",
+    "keyword": "Feature",
+    "uri": "TheBest.feature"
+  }
+]
